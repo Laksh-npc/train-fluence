@@ -7,6 +7,8 @@ import trainsRouter from './routes/trains.js';
 import statsRouter from './routes/corridorStats.js';
 import uploadRouter from './routes/upload.js';
 import liveTrainsRouter from './routes/liveTrains.js';
+import optimizeRouter from './routes/optimize.js';
+import optimizedScheduleRouter from './routes/optimizedSchedule.js';
 import { startIngestCron } from './cron/ingestCron.js';
 
 const app = express();
@@ -23,6 +25,8 @@ app.use('/api/trains', trainsRouter);
 app.use('/api/corridor-stats', statsRouter);
 app.use('/api/upload', uploadRouter);
 app.use('/api/live-trains', liveTrainsRouter);
+app.use('/api/optimize', optimizeRouter);
+app.use('/api/optimized-schedule', optimizedScheduleRouter);
 
 // start cron if enabled
 if (process.env.INGEST_CRON !== 'off') {

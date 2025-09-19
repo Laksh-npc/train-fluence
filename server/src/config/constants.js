@@ -39,3 +39,7 @@ export const DEFAULT_PLATFORM_RANGE = { min: 1, max: 5 };
 
 export const SERVICE_NAME = 'dataIngestionService';
 
+// Optimizer constants
+export const OPTIMIZER_SNAPSHOT_MINUTES = 10;
+export const OPTIMIZER_TIMEOUT_MS = 30000; // 30 seconds
+

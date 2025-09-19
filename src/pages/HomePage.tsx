@@ -1,14 +1,50 @@
-import { Train, Clock, TrendingUp, AlertTriangle, Play } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Train, Clock, TrendingUp, AlertTriangle, Play, RefreshCw, AlertCircle, Zap, Activity } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useNavigate } from "react-router-dom";
+import { mockKPIData, mockOptimizationResult, mockAPIResponses } from "@/services/mockData";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const [kpiData, setKpiData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [optimizationResult, setOptimizationResult] = useState<any>(null);
+  const [optimizing, setOptimizing] = useState(false);
+  const [algorithmRun, setAlgorithmRun] = useState(false);
 
-  // Mock data for KPIs
-  const kpiData = [
+  // Load initial empty state
+  const fetchKPIs = async () => {
+    setLoading(true);
+    setTimeout(() => {
+      // Show empty state before algorithm runs
+      setKpiData([]);
+      setLoading(false);
+    }, 500);
+  };
+
+  // Run optimization - this triggers all data (frontend only)
+  const runOptimization = async () => {
+    setOptimizing(true);
+    setError(null);
+    
+    // Simulate algorithm running (frontend only)
+    setTimeout(() => {
+      setOptimizationResult(mockOptimizationResult);
+      setKpiData(mockKPIData); // Load data after algorithm
+      setAlgorithmRun(true);
+      setOptimizing(false);
+    }, 2000); // 2 seconds to show algorithm is working
+  };
+
+  useEffect(() => {
+    fetchKPIs();
+  }, []);
+
+  // Mock data fallback for when API is not available
+  const mockKpiData = [
     {
       title: "Trains Running",
       value: "847",
@@ -89,6 +125,16 @@ const HomePage = () => {
             >
               View Analytics
             </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              onClick={runOptimization}
+              disabled={optimizing}
+              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+            >
+              <Zap className={`h-5 w-5 mr-2 ${optimizing ? 'animate-pulse' : ''}`} />
+              {optimizing ? 'Optimizing...' : 'Run AI Optimization'}
+            </Button>
           </div>
         </div>
         
@@ -98,15 +144,90 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Error Alert */}
+      {error && (
+        <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4 flex items-center space-x-2">
+          <AlertCircle className="h-5 w-5 text-destructive" />
+          <div>
+            <p className="text-destructive font-medium">Connection Error</p>
+            <p className="text-destructive/80 text-sm">{error}</p>
+            <p className="text-destructive/60 text-xs mt-1">
+              Showing mock data. Make sure the backend server is running on port 3000.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Optimization Results */}
+      {optimizationResult && (
+        <div className="bg-success/10 border border-success/20 rounded-lg p-6">
+          <div className="flex items-center space-x-2 mb-4">
+            <Zap className="h-6 w-6 text-success" />
+            <h3 className="text-lg font-semibold text-success">Optimization Complete!</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-success">{optimizationResult.train_count}</div>
+              <div className="text-sm text-success/80">Trains Optimized</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-success">{optimizationResult.solver_status}</div>
+              <div className="text-sm text-success/80">Status</div>
+            </div>
+            <div className="text-center">
+              <div className="text-2xl font-bold text-success">{optimizationResult.objective_value}</div>
+              <div className="text-sm text-success/80">Objective Value</div>
+            </div>
+          </div>
+          {optimizationResult.summary.top5_changes.length > 0 && (
+            <div>
+              <h4 className="font-medium mb-2">Top Recommendations:</h4>
+              <div className="space-y-2">
+                {optimizationResult.summary.top5_changes.map((change, index) => (
+                  <div key={index} className="flex justify-between items-center bg-white/50 rounded p-2">
+                    <span className="font-medium">Train {change.train_no}</span>
+                    <Badge variant="outline" className="text-success border-success">
+                      Hold {Math.round(change.hold_seconds / 60)} min
+                    </Badge>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
       {/* KPI Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {kpiData.map((kpi, index) => (
+        {!algorithmRun ? (
+          // Empty state before algorithm runs
+          Array.from({ length: 4 }).map((_, index) => (
+            <Card key={index} className="border-dashed border-2">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium text-muted-foreground">
+                  Loading...
+                </CardTitle>
+                <Activity className="h-5 w-5 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  <div className="text-3xl font-bold text-muted-foreground">
+                    --:--
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    Run AI optimization to load data
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))
+        ) : (kpiData.length > 0 ? kpiData : mockKpiData).map((kpi, index) => (
           <Card key={index} className="kpi-card hover:shadow-elevated transition-all duration-300">
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium text-muted-foreground">
                 {kpi.title}
               </CardTitle>
-              <kpi.icon className={`h-5 w-5 ${getStatusColor(kpi.status)}`} />
+              {kpi.icon ? <kpi.icon className={`h-5 w-5 ${getStatusColor(kpi.status)}`} /> : <Activity className={`h-5 w-5 ${getStatusColor(kpi.status)}`} />}
             </CardHeader>
             <CardContent>
               <div className="space-y-2">

@@ -7,10 +7,8 @@ import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import Layout from "@/components/layout/Layout";
 import HomePage from "./pages/HomePage";
 import DashboardPage from "./pages/DashboardPage";
-import MapPage from "./pages/MapPage";
-import AnalyticsPage from "./pages/AnalyticsPage";
-import UploadPage from "./pages/UploadPage";
-import SettingsPage from "./pages/SettingsPage";
+import OptimizationAnalytics from "./pages/OptimizationAnalytics";
+import ApiTestPage from "./pages/ApiTestPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,15 +19,13 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <Layout>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/dashboard" element={<DashboardPage />} />
-              <Route path="/map" element={<MapPage />} />
-              <Route path="/analytics" element={<AnalyticsPage />} />
-              <Route path="/upload" element={<UploadPage />} />
-              <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/analytics" element={<OptimizationAnalytics />} />
+              <Route path="/api-test" element={<ApiTestPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>

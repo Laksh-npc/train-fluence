@@ -94,8 +94,8 @@ export function computeDwellSeconds(priorityCategory) {
   return DEFAULT_DWELL_SECONDS[priorityCategory] ?? 120;
 }
 
-export async function ingestOnce({ source = 'railradar_mock' } = {}) {
-  const useApi = String(process.env.RAILRADAR_USE_API || '').toLowerCase() === 'true';
+export async function ingestOnce({ source = 'railradar_api' } = {}) {
+  const useApi = String(process.env.RAILRADAR_USE_API || 'true').toLowerCase() === 'true';
   const apiKey = process.env.RAILRADAR_API_KEY || '';
   const fromStation = process.env.RAILRADAR_FROM || 'NDLS';
   const toStation = process.env.RAILRADAR_TO || 'MMCT';

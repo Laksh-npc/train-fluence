@@ -1,0 +1,393 @@
+{
+  "success": true,
+  "data": {
+    "train": {
+      "number": "20156",
+      "name": "NDLS DADN SF EXP",
+      "nameHindi": "\u0938\u0941\u092a\u0930 \u092b\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938",
+      "type": "SUF",
+      "typeDescription": "SUPERFAST",
+      "typeDescriptionHindi": "\u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f",
+      "source": {
+        "code": "NDLS",
+        "name": "NEW DELHI",
+        "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+      },
+      "destination": {
+        "code": "DADN",
+        "name": "DR. AMBEDKAR NAGAR",
+        "nameHindi": "\u0921\u0949\u0964 \u0905\u092e\u094d\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930"
+      }
+    },
+    "travelTime": "13:25",
+    "runDays": "Daily",
+    "availableClasses": [
+      "1A",
+      "2A",
+      "3A",
+      "SL",
+      "GEN"
+    ],
+    "validFrom": "14-Apr-2025",
+    "isReserved": true,
+    "availableStartDates": [
+      "05-Sep-2025",
+      "06-Sep-2025",
+      "07-Sep-2025",
+      "08-Sep-2025",
+      "09-Sep-2025",
+      "10-Sep-2025",
+      "11-Sep-2025",
+      "12-Sep-2025",
+      "13-Sep-2025",
+      "14-Sep-2025",
+      "15-Sep-2025",
+      "16-Sep-2025",
+      "17-Sep-2025",
+      "18-Sep-2025",
+      "19-Sep-2025",
+      "20-Sep-2025",
+      "21-Sep-2025",
+      "22-Sep-2025",
+      "23-Sep-2025",
+      "24-Sep-2025",
+      "25-Sep-2025",
+      "26-Sep-2025",
+      "27-Sep-2025",
+      "28-Sep-2025",
+      "29-Sep-2025",
+      "30-Sep-2025",
+      "01-Oct-2025",
+      "02-Oct-2025",
+      "03-Oct-2025",
+      "04-Oct-2025",
+      "05-Oct-2025",
+      "06-Oct-2025",
+      "07-Oct-2025",
+      "08-Oct-2025",
+      "09-Oct-2025",
+      "10-Oct-2025",
+      "11-Oct-2025",
+      "12-Oct-2025",
+      "13-Oct-2025",
+      "14-Oct-2025",
+      "15-Oct-2025",
+      "16-Oct-2025",
+      "17-Oct-2025",
+      "18-Oct-2025",
+      "19-Oct-2025",
+      "20-Oct-2025",
+      "21-Oct-2025",
+      "22-Oct-2025",
+      "23-Oct-2025",
+      "24-Oct-2025",
+      "25-Oct-2025",
+      "26-Oct-2025",
+      "27-Oct-2025",
+      "28-Oct-2025",
+      "29-Oct-2025",
+      "30-Oct-2025",
+      "31-Oct-2025",
+      "01-Nov-2025",
+      "02-Nov-2025",
+      "03-Nov-2025",
+      "04-Nov-2025",
+      "05-Nov-2025",
+      "06-Nov-2025",
+      "07-Nov-2025",
+      "08-Nov-2025",
+      "09-Nov-2025",
+      "10-Nov-2025",
+      "11-Nov-2025",
+      "12-Nov-2025",
+      "13-Nov-2025",
+      "14-Nov-2025",
+      "15-Nov-2025",
+      "16-Nov-2025",
+      "17-Nov-2025",
+      "18-Nov-2025",
+      "19-Nov-2025"
+    ],
+    "route": [
+      {
+        "stopNumber": 1,
+        "station": {
+          "code": "NDLS",
+          "name": "NEW DELHI",
+          "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+        },
+        "distanceKilometers": 0,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "",
+          "departure": "23:25",
+          "haltMinutes": 0
+        }
+      },
+      {
+        "stopNumber": 2,
+        "station": {
+          "code": "NZM",
+          "name": "HAZRAT NIZAMUDDIN JN",
+          "nameHindi": "\u0939\u091c\u0930\u0924 \u0928\u093f\u091c\u093e\u092e\u0941\u0926\u094d\u0926\u0940\u0928"
+        },
+        "distanceKilometers": 7,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "23:36",
+          "departure": "23:38",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 3,
+        "station": {
+          "code": "MTJ",
+          "name": "MATHURA JN.",
+          "nameHindi": "\u092e\u0925\u0941\u0930\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 141,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "01:10",
+          "departure": "01:15",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 4,
+        "station": {
+          "code": "BTE",
+          "name": "BHARATPUR JN",
+          "nameHindi": "\u092d\u0930\u0924\u092a\u0941\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 174,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "01:38",
+          "departure": "01:40",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 5,
+        "station": {
+          "code": "BXN",
+          "name": "BAYANA JN",
+          "nameHindi": "\u092c\u092f\u093e\u0928\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 216,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "02:05",
+          "departure": "02:07",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 6,
+        "station": {
+          "code": "GGC",
+          "name": "GANGAPUR CITY",
+          "nameHindi": "\u0917\u0902\u0917\u093e\u092a\u0941\u0930 \u0938\u093f\u091f\u0940"
+        },
+        "distanceKilometers": 293,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "02:58",
+          "departure": "03:00",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 7,
+        "station": {
+          "code": "SWM",
+          "name": "SAWAI MADHOPUR JN",
+          "nameHindi": "\u0938\u0935\u093e\u0908 \u092e\u093e\u0927\u094b\u092a\u0941\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 357,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "03:43",
+          "departure": "03:45",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 8,
+        "station": {
+          "code": "KOTA",
+          "name": "KOTA JN",
+          "nameHindi": "\u0915\u094b\u091f\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 465,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "05:20",
+          "departure": "05:30",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 9,
+        "station": {
+          "code": "RMA",
+          "name": "RAMGANJ MANDI",
+          "nameHindi": "\u0930\u093e\u092e\u0917\u0902\u091c \u092e\u0902\u0921\u0940"
+        },
+        "distanceKilometers": 537,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "06:13",
+          "departure": "06:15",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 10,
+        "station": {
+          "code": "BWM",
+          "name": "BHAWANI MANDI",
+          "nameHindi": "\u092d\u0935\u093e\u0928\u0940 \u092e\u0902\u0921\u0940"
+        },
+        "distanceKilometers": 565,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "06:33",
+          "departure": "06:35",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 11,
+        "station": {
+          "code": "SGZ",
+          "name": "SHAMGARH",
+          "nameHindi": "\u0936\u093e\u092e\u0917\u0922\u093c"
+        },
+        "distanceKilometers": 598,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "06:58",
+          "departure": "07:00",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 12,
+        "station": {
+          "code": "NAD",
+          "name": "NAGDA JN",
+          "nameHindi": "\u0928\u093e\u0917\u0926\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 690,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:00",
+          "departure": "09:15",
+          "haltMinutes": 15
+        }
+      },
+      {
+        "stopNumber": 13,
+        "station": {
+          "code": "UJN",
+          "name": "UJJAIN JN",
+          "nameHindi": "\u0909\u091c\u094d\u091c\u0948\u0928 \u091c\u0902."
+        },
+        "distanceKilometers": 745,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "10:20",
+          "departure": "10:25",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 14,
+        "station": {
+          "code": "DWX",
+          "name": "DEWAS",
+          "nameHindi": "\u0926\u0947\u0935\u093e\u0938"
+        },
+        "distanceKilometers": 785,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "11:08",
+          "departure": "11:10",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 15,
+        "station": {
+          "code": "INDB",
+          "name": "INDORE JN",
+          "nameHindi": "\u0907\u0902\u0926\u094c\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 827,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:00",
+          "departure": "12:10",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 16,
+        "station": {
+          "code": "DADN",
+          "name": "DR. AMBEDKAR NAGAR",
+          "nameHindi": "\u0921\u0949\u0964 \u0905\u092e\u094d\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930"
+        },
+        "distanceKilometers": 848,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:50",
+          "departure": "",
+          "haltMinutes": 0
+        }
+      }
+    ]
+  },
+  "meta": {
+    "timestamp": "2025-09-19T19:39:40.797Z",
+    "traceId": "93124818-f589-4974-b48e-e7b331457ed4",
+    "executionTime": 43,
+    "service": "TrainAPI_V1",
+    "method": "getTrainSchedule"
+  }
+}

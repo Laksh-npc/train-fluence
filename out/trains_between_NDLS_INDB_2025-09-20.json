@@ -1,0 +1,149 @@
+{
+  "success": true,
+  "data": [
+    {
+      "trainNumber": "12416",
+      "trainName": "New Delhi - Indore Intercity SF Express (via Ujjain) (PT)",
+      "hindiName": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940 - \u0907\u0928\u094d\u0926\u094c\u0930 \u0907\u0902\u091f\u0930\u0938\u093f\u091f\u0940 \u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938 (\u0935\u093e\u092f\u093e \u0909\u091c\u094d\u091c\u0948\u0928)",
+      "type": "SuperFast",
+      "zone": "NR/Northern",
+      "sourceStationCode": "NDLS",
+      "destinationStationCode": "INDB",
+      "runningDaysBitmap": 127,
+      "returnTrainNumber": "12415",
+      "totalHalts": 19,
+      "distanceKm": 826,
+      "avgSpeedKmph": 67,
+      "createdAt": 1752824160,
+      "updatedAt": 1752824160,
+      "fromStationSchedule": {
+        "departureMinutes": 1310,
+        "day": 1,
+        "platform": "4"
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 605,
+        "day": 2,
+        "platform": "3",
+        "distanceFromSourceKm": 825.9
+      }
+    },
+    {
+      "trainNumber": "12920",
+      "trainName": "Malwa SF Express",
+      "hindiName": "\u092e\u093e\u0932\u0935\u093e \u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938",
+      "type": "SuperFast",
+      "zone": "WR/Western",
+      "sourceStationCode": "SVDK",
+      "destinationStationCode": "DADN",
+      "runningDaysBitmap": 127,
+      "returnTrainNumber": "12919",
+      "totalHalts": 47,
+      "distanceKm": 1641,
+      "avgSpeedKmph": 55,
+      "createdAt": 1752824160,
+      "updatedAt": 1752824160,
+      "fromStationSchedule": {
+        "arrivalMinutes": 1215,
+        "departureMinutes": 1230,
+        "day": 1,
+        "platform": "5",
+        "distanceFromSourceKm": 654.7
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 815,
+        "departureMinutes": 825,
+        "day": 2,
+        "platform": "2",
+        "distanceFromSourceKm": 1620.2
+      }
+    },
+    {
+      "trainNumber": "20156",
+      "trainName": "New Delhi - Dr. Ambedkar Nagar SF Express",
+      "hindiName": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940 - \u0921\u0949. \u0905\u0902\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930 \u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938",
+      "type": "SuperFast",
+      "zone": "WCR/West Central",
+      "sourceStationCode": "NDLS",
+      "destinationStationCode": "DADN",
+      "runningDaysBitmap": 127,
+      "returnTrainNumber": "20155",
+      "totalHalts": 14,
+      "distanceKm": 847,
+      "avgSpeedKmph": 63,
+      "createdAt": 1752824162,
+      "updatedAt": 1752824162,
+      "fromStationSchedule": {
+        "departureMinutes": 1405,
+        "day": 1,
+        "platform": "1"
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 720,
+        "departureMinutes": 730,
+        "day": 2,
+        "platform": "2,3",
+        "distanceFromSourceKm": 825.9
+      }
+    },
+    {
+      "trainNumber": "20958",
+      "trainName": "New Delhi - Indore SF Express (Via Ratlam) (PT)",
+      "hindiName": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940 - \u0907\u0928\u094d\u0926\u094c\u0930 \u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938 (\u0935\u093e\u092f\u093e \u0930\u0924\u0932\u093e\u092e)",
+      "type": "SuperFast",
+      "zone": "WR/Western",
+      "sourceStationCode": "NDLS",
+      "destinationStationCode": "INDB",
+      "runningDaysBitmap": 82,
+      "returnTrainNumber": "20957",
+      "totalHalts": 10,
+      "distanceKm": 851,
+      "avgSpeedKmph": 74,
+      "createdAt": 1752824162,
+      "updatedAt": 1752824162,
+      "fromStationSchedule": {
+        "departureMinutes": 1155,
+        "day": 1,
+        "platform": "8"
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 405,
+        "day": 2,
+        "platform": "5,6",
+        "distanceFromSourceKm": 851
+      }
+    },
+    {
+      "trainNumber": "04092",
+      "trainName": "New Delhi - Indore Special Fare SF Special",
+      "hindiName": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940 - \u0907\u0928\u094d\u0926\u094c\u0930 \u0935\u093f\u0936\u0947\u0937 \u0915\u093f\u0930\u093e\u092f\u093e \u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f \u0938\u094d\u092a\u0947\u0936\u0932",
+      "type": "SuperFast",
+      "zone": "WR/Western",
+      "sourceStationCode": "NDLS",
+      "destinationStationCode": "INDB",
+      "runningDaysBitmap": 33,
+      "returnTrainNumber": "04091",
+      "totalHalts": 4,
+      "distanceKm": 851,
+      "avgSpeedKmph": 59,
+      "createdAt": 1752824162,
+      "updatedAt": 1752824162,
+      "fromStationSchedule": {
+        "departureMinutes": 930,
+        "day": 1
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 360,
+        "day": 2,
+        "distanceFromSourceKm": 851
+      }
+    }
+  ],
+  "meta": {
+    "timestamp": "2025-09-19T19:39:38.849Z",
+    "traceId": "a13f7ca9-ba1a-407f-9ddb-a0bbe59b27a6",
+    "executionTime": 6,
+    "service": "TrainAPI_V1",
+    "method": "getTrainsBetweenStations"
+  }
+}

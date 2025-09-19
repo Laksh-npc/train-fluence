@@ -1,0 +1,68 @@
+{
+  "success": true,
+  "data": [
+    {
+      "trainNumber": "11058",
+      "trainName": "Amritsar - Mumbai CSMT Express",
+      "type": "Mail/Express",
+      "zone": "CR/Central",
+      "sourceStationCode": "ASR",
+      "destinationStationCode": "CSMT",
+      "runningDaysBitmap": 127,
+      "returnTrainNumber": "11057",
+      "totalHalts": 82,
+      "distanceKm": 2047,
+      "avgSpeedKmph": 52,
+      "createdAt": 1752824160,
+      "updatedAt": 1752824160,
+      "fromStationSchedule": {
+        "arrivalMinutes": 1225,
+        "departureMinutes": 1240,
+        "day": 1,
+        "platform": "7",
+        "distanceFromSourceKm": 502.7
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 5,
+        "day": 3,
+        "distanceFromSourceKm": 2046.8
+      }
+    },
+    {
+      "trainNumber": "12138",
+      "trainName": "Punjab Mail",
+      "hindiName": "\u092a\u0902\u091c\u093e\u092c \u092e\u0947\u0932",
+      "type": "SuperFast",
+      "zone": "CR/Central",
+      "sourceStationCode": "FZR",
+      "destinationStationCode": "CSMT",
+      "runningDaysBitmap": 127,
+      "returnTrainNumber": "12137",
+      "totalHalts": 50,
+      "distanceKm": 1930,
+      "avgSpeedKmph": 57,
+      "createdAt": 1752824160,
+      "updatedAt": 1752824160,
+      "fromStationSchedule": {
+        "arrivalMinutes": 295,
+        "departureMinutes": 310,
+        "day": 2,
+        "platform": "3",
+        "distanceFromSourceKm": 385.9
+      },
+      "toStationSchedule": {
+        "arrivalMinutes": 455,
+        "day": 3,
+        "platform": "16",
+        "distanceFromSourceKm": 1930.1
+      }
+    }
+  ],
+  "meta": {
+    "timestamp": "2025-09-19T19:34:43.111Z",
+    "traceId": "d92264b4-a51d-40d7-b5a7-53a9db39a237",
+    "executionTime": 93,
+    "service": "TrainAPI_V1",
+    "method": "getTrainsBetweenStations"
+  }
+}

@@ -1,4 +1,4 @@
-import { Train, BarChart3, Settings, Upload, Home, MapPin } from "lucide-react";
+import { Train, Home, TestTube, BarChart3 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./ThemeToggle";
@@ -7,10 +7,8 @@ const Navigation = () => {
   const navItems = [
     { to: "/", icon: Home, label: "Home" },
     { to: "/dashboard", icon: Train, label: "Live Dashboard" },
-    { to: "/map", icon: MapPin, label: "Map" },
     { to: "/analytics", icon: BarChart3, label: "Analytics" },
-    { to: "/upload", icon: Upload, label: "Data Upload" },
-    { to: "/settings", icon: Settings, label: "Settings" },
+    { to: "/api-test", icon: TestTube, label: "API Test" },
   ];
 
   return (

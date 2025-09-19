@@ -8,7 +8,7 @@ export function startIngestCron() {
   // Every minute
   task = cron.schedule('* * * * *', async () => {
     try {
-      const res = await ingestOnce({ source: 'railradar_mock' });
+      const res = await ingestOnce({ source: 'railradar_api' });
       console.log(`[ingestCron] processed=${res.processed}`);
     } catch (e) {
       console.error('[ingestCron] error', e);
