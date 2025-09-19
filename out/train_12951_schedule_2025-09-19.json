@@ -1,0 +1,255 @@
+{
+  "success": true,
+  "data": {
+    "train": {
+      "number": "12951",
+      "name": "NDLS TEJAS RAJ",
+      "nameHindi": "\u0924\u0947\u091c\u0938 \u0930\u093e\u091c\u0927\u093e\u0928\u093f",
+      "type": "RAJ",
+      "typeDescription": "RAJDHANI",
+      "typeDescriptionHindi": "\u0930\u093e\u091c\u0927\u093e\u0928\u0940",
+      "source": {
+        "code": "MMCT",
+        "name": "MUMBAI CENTRAL",
+        "nameHindi": "\u092e\u0941\u092e\u094d\u092c\u0908 \u0938\u0947\u0928\u094d\u091f\u094d\u0930\u0932"
+      },
+      "destination": {
+        "code": "NDLS",
+        "name": "NEW DELHI",
+        "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+      }
+    },
+    "travelTime": "15:32",
+    "runDays": "Daily",
+    "availableClasses": [
+      "1A",
+      "2A",
+      "3A"
+    ],
+    "validFrom": "12-Feb-2025",
+    "isReserved": true,
+    "availableStartDates": [
+      "04-Sep-2025",
+      "05-Sep-2025",
+      "06-Sep-2025",
+      "07-Sep-2025",
+      "08-Sep-2025",
+      "09-Sep-2025",
+      "10-Sep-2025",
+      "11-Sep-2025",
+      "12-Sep-2025",
+      "13-Sep-2025",
+      "14-Sep-2025",
+      "15-Sep-2025",
+      "16-Sep-2025",
+      "17-Sep-2025",
+      "18-Sep-2025",
+      "19-Sep-2025",
+      "20-Sep-2025",
+      "21-Sep-2025",
+      "22-Sep-2025",
+      "23-Sep-2025",
+      "24-Sep-2025",
+      "25-Sep-2025",
+      "26-Sep-2025",
+      "27-Sep-2025",
+      "28-Sep-2025",
+      "29-Sep-2025",
+      "30-Sep-2025",
+      "01-Oct-2025",
+      "02-Oct-2025",
+      "03-Oct-2025",
+      "04-Oct-2025",
+      "05-Oct-2025",
+      "06-Oct-2025",
+      "07-Oct-2025",
+      "08-Oct-2025",
+      "09-Oct-2025",
+      "10-Oct-2025",
+      "11-Oct-2025",
+      "12-Oct-2025",
+      "13-Oct-2025",
+      "14-Oct-2025",
+      "15-Oct-2025",
+      "16-Oct-2025",
+      "17-Oct-2025",
+      "18-Oct-2025",
+      "19-Oct-2025",
+      "20-Oct-2025",
+      "21-Oct-2025",
+      "22-Oct-2025",
+      "23-Oct-2025",
+      "24-Oct-2025",
+      "25-Oct-2025",
+      "26-Oct-2025",
+      "27-Oct-2025",
+      "28-Oct-2025",
+      "29-Oct-2025",
+      "30-Oct-2025",
+      "31-Oct-2025",
+      "01-Nov-2025",
+      "02-Nov-2025",
+      "03-Nov-2025",
+      "04-Nov-2025",
+      "05-Nov-2025",
+      "06-Nov-2025",
+      "07-Nov-2025",
+      "08-Nov-2025",
+      "09-Nov-2025",
+      "10-Nov-2025",
+      "11-Nov-2025",
+      "12-Nov-2025",
+      "13-Nov-2025",
+      "14-Nov-2025",
+      "15-Nov-2025",
+      "16-Nov-2025",
+      "17-Nov-2025",
+      "18-Nov-2025"
+    ],
+    "route": [
+      {
+        "stopNumber": 1,
+        "station": {
+          "code": "MMCT",
+          "name": "MUMBAI CENTRAL",
+          "nameHindi": "\u092e\u0941\u092e\u094d\u092c\u0908 \u0938\u0947\u0928\u094d\u091f\u094d\u0930\u0932"
+        },
+        "distanceKilometers": 0,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "",
+          "departure": "17:00",
+          "haltMinutes": 0
+        }
+      },
+      {
+        "stopNumber": 2,
+        "station": {
+          "code": "BVI",
+          "name": "BORIVALI",
+          "nameHindi": "\u092c\u094b\u0930\u093f\u0935\u0932\u0940"
+        },
+        "distanceKilometers": 30,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "17:22",
+          "departure": "17:24",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 3,
+        "station": {
+          "code": "ST",
+          "name": "SURAT",
+          "nameHindi": "\u0938\u0942\u0930\u0924"
+        },
+        "distanceKilometers": 262,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "19:43",
+          "departure": "19:48",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 4,
+        "station": {
+          "code": "BRC",
+          "name": "VADODARA JN",
+          "nameHindi": "\u0935\u0921\u094b\u0926\u0930\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 392,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "21:06",
+          "departure": "21:16",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 5,
+        "station": {
+          "code": "RTM",
+          "name": "RATLAM JN",
+          "nameHindi": "\u0930\u0924\u0932\u093e\u092e \u091c\u0902."
+        },
+        "distanceKilometers": 649,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "00:25",
+          "departure": "00:28",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 6,
+        "station": {
+          "code": "NAD",
+          "name": "NAGDA JN",
+          "nameHindi": "\u0928\u093e\u0917\u0926\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 691,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "01:08",
+          "departure": "01:10",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 7,
+        "station": {
+          "code": "KOTA",
+          "name": "KOTA JN",
+          "nameHindi": "\u0915\u094b\u091f\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 916,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "03:15",
+          "departure": "03:20",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 8,
+        "station": {
+          "code": "NDLS",
+          "name": "NEW DELHI",
+          "nameHindi": "&#2344;&#2312; &#2342;&#2367;&#2354;&#2381;&#2354;&#2368;"
+        },
+        "distanceKilometers": 1380,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:32",
+          "departure": "",
+          "haltMinutes": 0
+        }
+      }
+    ]
+  },
+  "meta": {
+    "timestamp": "2025-09-19T14:10:56.918Z",
+    "traceId": "21d073d7-5211-4ead-a912-e50069d37cba",
+    "executionTime": 137,
+    "service": "TrainAPI_V1",
+    "method": "getTrainSchedule"
+  }
+}

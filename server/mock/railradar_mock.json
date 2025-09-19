@@ -1,0 +1,53 @@
+[
+  {
+    "train_no": "12951",
+    "train_name": "Mumbai Rajdhani",
+    "current_station": "RTM",
+    "next_station": "KOTA",
+    "position": { "lat": 25.9800, "lon": 75.8000 },
+    "delay_minutes": 20,
+    "status": "delayed",
+    "schedule": [
+      { "station":"NDLS", "arr":"2025-09-19T00:00:00+05:30", "dep":"2025-09-19T00:10:00+05:30" },
+      { "station":"RTM", "arr":"2025-09-19T06:00:00+05:30", "dep":"2025-09-19T06:10:00+05:30" },
+      { "station":"KOTA", "arr":"2025-09-19T08:30:00+05:30", "dep":"2025-09-19T08:40:00+05:30" }
+    ]
+  },
+  {
+    "train_no": "19018",
+    "train_name": "Rajdhani Express (other)",
+    "current_station": "AGC",
+    "next_station": "RTM",
+    "position": { "lat": 26.3000, "lon": 75.7800 },
+    "delay_minutes": 5,
+    "status": "running"
+  },
+  {
+    "train_no": "09472",
+    "train_name": "Freight 09472",
+    "current_station": "RTM",
+    "next_station": "KOTA",
+    "position": { "lat": 25.9805, "lon": 75.8010 },
+    "delay_minutes": 0,
+    "status": "running"
+  },
+  {
+    "train_no": "12009",
+    "train_name": "Shatabdi Express",
+    "current_station": "NDLS",
+    "next_station": "AGC",
+    "position": { "lat": 28.6139, "lon": 77.2090 },
+    "delay_minutes": 12,
+    "status": "delayed"
+  },
+  {
+    "train_no": "22120",
+    "train_name": "Tejas Express",
+    "current_station": "KOTA",
+    "next_station": "RTM",
+    "position": { "lat": 25.2138, "lon": 75.8648 },
+    "delay_minutes": 3,
+    "status": "running"
+  }
+]
+
