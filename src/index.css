@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Railway Traffic Control Dashboard Design System
+   Professional railway operations theme with real-time monitoring aesthetics
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Clean professional background */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Card system - Elevated surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popover system */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Railway primary - Deep professional blue */
+    --primary: 210 85% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-muted: 210 50% 35%;
+
+    /* Secondary - Soft railway gray */
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 215 25% 25%;
+
+    /* Muted system */
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 10% 45%;
+
+    /* Accent - Railway operations blue */
+    --accent: 210 50% 92%;
+    --accent-foreground: 210 85% 25%;
+
+    /* Status colors for railway operations */
+    --success: 145 85% 35%;        /* On-time trains */
+    --success-foreground: 0 0% 98%;
+    --success-muted: 145 50% 92%;
+
+    --warning: 45 95% 50%;          /* Minor delays */
+    --warning-foreground: 45 25% 15%;
+    --warning-muted: 45 90% 95%;
+
+    --destructive: 0 85% 55%;       /* Major delays */
+    --destructive-foreground: 0 0% 98%;
+    --destructive-muted: 0 50% 95%;
+
+    /* Info - System notifications */
+    --info: 200 85% 45%;
+    --info-foreground: 0 0% 98%;
+    --info-muted: 200 50% 92%;
+
+    /* Border and input system */
+    --border: 215 15% 88%;
+    --input: 215 15% 88%;
+    --ring: 210 85% 25%;
+
+    /* Layout and spacing */
+    --radius: 0.75rem;
+
+    /* Railway-specific gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 85% 25%), hsl(210 70% 35%));
+    --gradient-success: linear-gradient(135deg, hsl(145 85% 35%), hsl(145 70% 45%));
+    --gradient-warning: linear-gradient(135deg, hsl(45 95% 50%), hsl(45 85% 60%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(215 15% 98%));
+
+    /* Shadows for depth */
+    --shadow-card: 0 2px 8px -2px hsl(215 25% 15% / 0.08);
+    --shadow-elevated: 0 8px 32px -8px hsl(215 25% 15% / 0.12);
+    --shadow-status: 0 0 20px hsl(var(--primary) / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode - Railway control room aesthetic */
+    --background: 215 25% 8%;
+    --foreground: 215 15% 95%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 215 15% 95%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 215 15% 95%;
+
+    /* Primary in dark - Bright railway blue */
+    --primary: 210 85% 65%;
+    --primary-foreground: 215 25% 8%;
+    --primary-muted: 210 50% 55%;
+
+    --secondary: 215 20% 15%;
+    --secondary-foreground: 215 15% 90%;
+
+    --muted: 215 20% 12%;
+    --muted-foreground: 215 10% 65%;
+
+    --accent: 215 20% 15%;
+    --accent-foreground: 210 85% 65%;
+
+    /* Dark mode status colors */
+    --success: 145 85% 55%;
+    --success-foreground: 215 25% 8%;
+    --success-muted: 145 30% 15%;
+
+    --warning: 45 95% 65%;
+    --warning-foreground: 45 25% 8%;
+    --warning-muted: 45 40% 15%;
+
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 215 25% 8%;
+    --destructive-muted: 0 30% 15%;
+
+    --info: 200 85% 65%;
+    --info-foreground: 215 25% 8%;
+    --info-muted: 200 30% 15%;
+
+    --border: 215 20% 18%;
+    --input: 215 20% 18%;
+    --ring: 210 85% 65%;
+
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 85% 65%), hsl(210 70% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(145 85% 55%), hsl(145 70% 65%));
+    --gradient-warning: linear-gradient(135deg, hsl(45 95% 65%), hsl(45 85% 75%));
+    --gradient-surface: linear-gradient(180deg, hsl(215 25% 10%), hsl(215 20% 8%));
+
+    /* Dark shadows */
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 8px 32px -8px hsl(0 0% 0% / 0.4);
+    --shadow-status: 0 0 20px hsl(var(--primary) / 0.25);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Railway operations styling */
+  .status-indicator {
+    @apply inline-flex h-2 w-2 rounded-full;
+  }
+
+  .status-on-time {
+    @apply bg-success shadow-sm;
+  }
+
+  .status-minor-delay {
+    @apply bg-warning shadow-sm;
+  }
+
+  .status-major-delay {
+    @apply bg-destructive shadow-sm;
+  }
+
+  .train-card {
+    @apply rounded-lg border bg-card p-4 shadow-sm transition-all hover:shadow-md;
+  }
+
+  .kpi-card {
+    @apply relative overflow-hidden rounded-xl border bg-gradient-to-br from-card to-muted/30 p-6 shadow-sm;
+  }
+
+  /* Map styling */
+  .leaflet-container {
+    @apply rounded-lg border;
+  }
+}
+
+@layer components {
+  /* Railway control animations */
+  .pulse-success {
+    @apply animate-pulse bg-success/20;
+  }
+
+  .pulse-warning {
+    @apply animate-pulse bg-warning/20;
+  }
+
+  .pulse-danger {
+    @apply animate-pulse bg-destructive/20;
+  }
+
+  /* Data table enhancements */
+  .data-table {
+    @apply w-full border-collapse border border-border bg-card;
+  }
+
+  .data-table th {
+    @apply border-b border-border bg-muted/50 px-4 py-3 text-left text-sm font-medium text-muted-foreground;
+  }
+
+  .data-table td {
+    @apply border-b border-border px-4 py-3 text-sm;
+  }
+
+  /* Real-time indicators */
+  .live-indicator::before {
+    content: '';
+    @apply mr-2 inline-block h-2 w-2 animate-pulse rounded-full bg-success;
+  }
+}
