@@ -1,0 +1,836 @@
+{
+  "success": true,
+  "data": {
+    "train": {
+      "number": "17229",
+      "name": "SABARI EXPRESS",
+      "nameHindi": "\u0924\u094d\u0930\u093f\u0935\u0947\u0928\u094d\u0926\u094d\u0930\u092e\u094d \u0938\u093f\u0915\u093f\u0928\u094d\u0926\u0947\u0930\u092c\u0926\u094d",
+      "type": "MEX",
+      "typeDescription": "MAIL EXPRESS",
+      "typeDescriptionHindi": "\u092e\u0947\u0932 \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938",
+      "source": {
+        "code": "TVC",
+        "name": "THIRUVANANTHAPURAM CENTRAL",
+        "nameHindi": "\u0924\u093f\u0930\u0941\u0935\u0928\u0902\u0924\u092a\u0941\u0930\u092e \u0938\u0947\u0902\u091f\u094d\u0930\u0932"
+      },
+      "destination": {
+        "code": "SC",
+        "name": "SECUNDERABAD JN",
+        "nameHindi": "\u0938\u093f\u0915\u0902\u0926\u0930\u093e\u092c\u093e\u0926 \u091c\u0902."
+      }
+    },
+    "travelTime": "30:00",
+    "runDays": "Daily",
+    "availableClasses": [
+      "1A",
+      "2A",
+      "3A",
+      "SL",
+      "GEN",
+      "PWD"
+    ],
+    "validFrom": "25-Apr-2025",
+    "isReserved": true,
+    "availableStartDates": [
+      "04-Sep-2025",
+      "05-Sep-2025",
+      "06-Sep-2025",
+      "07-Sep-2025",
+      "08-Sep-2025",
+      "09-Sep-2025",
+      "10-Sep-2025",
+      "11-Sep-2025",
+      "12-Sep-2025",
+      "13-Sep-2025",
+      "14-Sep-2025",
+      "15-Sep-2025",
+      "16-Sep-2025",
+      "17-Sep-2025",
+      "18-Sep-2025",
+      "19-Sep-2025",
+      "20-Sep-2025",
+      "21-Sep-2025",
+      "22-Sep-2025",
+      "23-Sep-2025",
+      "24-Sep-2025",
+      "25-Sep-2025",
+      "26-Sep-2025",
+      "27-Sep-2025",
+      "28-Sep-2025",
+      "29-Sep-2025",
+      "30-Sep-2025",
+      "01-Oct-2025",
+      "02-Oct-2025",
+      "03-Oct-2025",
+      "04-Oct-2025",
+      "05-Oct-2025",
+      "06-Oct-2025",
+      "07-Oct-2025",
+      "08-Oct-2025",
+      "09-Oct-2025",
+      "10-Oct-2025",
+      "11-Oct-2025",
+      "12-Oct-2025",
+      "13-Oct-2025",
+      "14-Oct-2025",
+      "15-Oct-2025",
+      "16-Oct-2025",
+      "17-Oct-2025",
+      "18-Oct-2025",
+      "19-Oct-2025",
+      "20-Oct-2025",
+      "21-Oct-2025",
+      "22-Oct-2025",
+      "23-Oct-2025",
+      "24-Oct-2025",
+      "25-Oct-2025",
+      "26-Oct-2025",
+      "27-Oct-2025",
+      "28-Oct-2025",
+      "29-Oct-2025",
+      "30-Oct-2025",
+      "31-Oct-2025",
+      "01-Nov-2025",
+      "02-Nov-2025",
+      "03-Nov-2025",
+      "04-Nov-2025",
+      "05-Nov-2025",
+      "06-Nov-2025",
+      "07-Nov-2025",
+      "08-Nov-2025",
+      "09-Nov-2025",
+      "10-Nov-2025",
+      "11-Nov-2025",
+      "12-Nov-2025",
+      "13-Nov-2025",
+      "14-Nov-2025",
+      "15-Nov-2025",
+      "16-Nov-2025",
+      "17-Nov-2025",
+      "18-Nov-2025"
+    ],
+    "route": [
+      {
+        "stopNumber": 1,
+        "station": {
+          "code": "TVC",
+          "name": "THIRUVANANTHAPURAM CENTRAL",
+          "nameHindi": "\u0924\u093f\u0930\u0941\u0935\u0928\u0902\u0924\u092a\u0941\u0930\u092e \u0938\u0947\u0902\u091f\u094d\u0930\u0932"
+        },
+        "distanceKilometers": 0,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "",
+          "departure": "06:45",
+          "haltMinutes": 0
+        }
+      },
+      {
+        "stopNumber": 2,
+        "station": {
+          "code": "VAK",
+          "name": "VARKALA",
+          "nameHindi": "\u0935\u0930\u094d\u0915\u0932\u093e \u0936\u093f\u0935\u0917\u093f\u0930\u0940"
+        },
+        "distanceKilometers": 41,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "07:24",
+          "departure": "07:25",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 3,
+        "station": {
+          "code": "QLN",
+          "name": "KOLLAM JN",
+          "nameHindi": "\u0915\u094d\u0935\u093f\u0932\u0928 \u091c\u0902."
+        },
+        "distanceKilometers": 64,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "07:48",
+          "departure": "07:51",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 4,
+        "station": {
+          "code": "KPY",
+          "name": "KARUNAGAPPALLI",
+          "nameHindi": "\u0915\u0930\u0941\u0928\u093e\u0917\u092a\u094d\u092a\u0932\u094d\u0932\u0940"
+        },
+        "distanceKilometers": 92,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:16",
+          "departure": "08:17",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 5,
+        "station": {
+          "code": "KYJ",
+          "name": "KAYANKULAM JN",
+          "nameHindi": "\u0915\u093e\u092f\u092e\u0915\u0941\u0932\u092e \u091c\u0902\u0915\u094d\u0936\u0928"
+        },
+        "distanceKilometers": 105,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:33",
+          "departure": "08:35",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 6,
+        "station": {
+          "code": "MVLK",
+          "name": "MAVELIKARA",
+          "nameHindi": "\u092e\u093e\u0935\u0947\u0932\u0940\u0915\u093e\u0930\u093e"
+        },
+        "distanceKilometers": 113,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:43",
+          "departure": "08:44",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 7,
+        "station": {
+          "code": "CNGR",
+          "name": "CHENGANNUR",
+          "nameHindi": "\u091a\u0947\u0902\u0917\u0928\u094d\u0928\u0942\u0930"
+        },
+        "distanceKilometers": 126,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:57",
+          "departure": "08:58",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 8,
+        "station": {
+          "code": "TRVL",
+          "name": "TIRUVALLA",
+          "nameHindi": "\u0924\u093f\u0930\u0941\u0935\u0932\u094d\u0932\u093e"
+        },
+        "distanceKilometers": 135,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:07",
+          "departure": "09:08",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 9,
+        "station": {
+          "code": "CGY",
+          "name": "CHANGANASSERI",
+          "nameHindi": "\u091a\u0928\u094d\u0917\u0928\u093e\u0936\u0947\u0930\u0940"
+        },
+        "distanceKilometers": 143,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:17",
+          "departure": "09:18",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 10,
+        "station": {
+          "code": "KTYM",
+          "name": "KOTTAYAM",
+          "nameHindi": "\u0915\u094b\u091f\u094d\u091f\u093e\u092f\u092e"
+        },
+        "distanceKilometers": 160,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:37",
+          "departure": "09:40",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 11,
+        "station": {
+          "code": "ERN",
+          "name": "ERNAKULAM TOWN",
+          "nameHindi": "\u090f\u0930\u094d\u0923\u093e\u0915\u0941\u0932\u092e \u091f\u093e\u0909\u0928"
+        },
+        "distanceKilometers": 220,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "11:10",
+          "departure": "11:15",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 12,
+        "station": {
+          "code": "AWY",
+          "name": "ALUVA",
+          "nameHindi": "\u0906\u0932\u094d\u0935\u0947\u0928"
+        },
+        "distanceKilometers": 237,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "11:30",
+          "departure": "11:32",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 13,
+        "station": {
+          "code": "TCR",
+          "name": "THRISUR",
+          "nameHindi": "\u0924\u094d\u0930\u093f\u091a\u0942\u0930"
+        },
+        "distanceKilometers": 291,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:35",
+          "departure": "12:38",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 14,
+        "station": {
+          "code": "WKI",
+          "name": "WADAKANCHERI",
+          "nameHindi": "\u0935\u0921\u093e\u0915\u093e\u0902\u091a\u0947\u0930\u0940"
+        },
+        "distanceKilometers": 309,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:59",
+          "departure": "13:00",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 15,
+        "station": {
+          "code": "OTP",
+          "name": "OTTAPPALAM",
+          "nameHindi": "\u0913\u091f\u094d\u091f\u093e\u092a\u0932\u094d\u0932\u092e"
+        },
+        "distanceKilometers": 337,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "13:30",
+          "departure": "13:32",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 16,
+        "station": {
+          "code": "PGT",
+          "name": "PALAKKAD JN",
+          "nameHindi": "\u092a\u093e\u0932\u0915\u094d\u0915\u093e\u0921 \u091c\u0902\u0915\u094d\u0936\u0928"
+        },
+        "distanceKilometers": 369,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "14:07",
+          "departure": "14:10",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 17,
+        "station": {
+          "code": "CBE",
+          "name": "COIMBATORE JN",
+          "nameHindi": "\u0915\u094b\u092f\u0902\u092c\u091f\u0942\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 423,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "15:52",
+          "departure": "15:55",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 18,
+        "station": {
+          "code": "TUP",
+          "name": "TIRUPPUR",
+          "nameHindi": "\u0924\u093f\u0930\u0941\u092a\u094d\u092a\u0942\u0930"
+        },
+        "distanceKilometers": 473,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "16:43",
+          "departure": "16:45",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 19,
+        "station": {
+          "code": "ED",
+          "name": "ERODE JN",
+          "nameHindi": "\u0907\u0930\u094b\u0921 \u091c\u0902."
+        },
+        "distanceKilometers": 524,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "17:35",
+          "departure": "17:45",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 20,
+        "station": {
+          "code": "SA",
+          "name": "SALEM JN",
+          "nameHindi": "\u0938\u0947\u0932\u092e \u091c\u0902."
+        },
+        "distanceKilometers": 583,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "18:37",
+          "departure": "18:40",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 21,
+        "station": {
+          "code": "MAP",
+          "name": "MORAPPUR",
+          "nameHindi": "\u092e\u094b\u0930\u093e\u092a\u092a\u0941\u0930"
+        },
+        "distanceKilometers": 650,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "19:29",
+          "departure": "19:30",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 22,
+        "station": {
+          "code": "JTJ",
+          "name": "JOLARPETTAI JN.",
+          "nameHindi": "\u091c\u094b\u0932\u093e\u0930\u092a\u0947\u091f\u0948 \u091c\u0902."
+        },
+        "distanceKilometers": 708,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "20:28",
+          "departure": "20:30",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 23,
+        "station": {
+          "code": "KPD",
+          "name": "KATPADI JN",
+          "nameHindi": "\u0915\u091f\u092a\u0921\u0940 \u091c\u0902."
+        },
+        "distanceKilometers": 792,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "21:55",
+          "departure": "22:00",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 24,
+        "station": {
+          "code": "CTO",
+          "name": "CHITTOOR",
+          "nameHindi": "\u091a\u093f\u0924\u094d\u0924\u0942\u0930"
+        },
+        "distanceKilometers": 824,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "22:28",
+          "departure": "22:30",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 25,
+        "station": {
+          "code": "TPTY",
+          "name": "TIRUPATI",
+          "nameHindi": "\u0924\u093f\u0930\u0941\u092a\u0924\u093f"
+        },
+        "distanceKilometers": 896,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "23:35",
+          "departure": "23:40",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 26,
+        "station": {
+          "code": "RU",
+          "name": "RENIGUNTA JN",
+          "nameHindi": "\u0930\u0947\u0928\u093f\u0917\u0941\u0902\u091f\u093e"
+        },
+        "distanceKilometers": 905,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "00:00",
+          "departure": "00:10",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 27,
+        "station": {
+          "code": "GDR",
+          "name": "GUDUR JN",
+          "nameHindi": "\u0917\u0941\u0921\u0941\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 988,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "01:43",
+          "departure": "01:45",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 28,
+        "station": {
+          "code": "NLR",
+          "name": "NELLORE",
+          "nameHindi": "\u0928\u0947\u0932\u094d\u0932\u094b\u0930"
+        },
+        "distanceKilometers": 1027,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "02:14",
+          "departure": "02:15",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 29,
+        "station": {
+          "code": "SKM",
+          "name": "SINGARAYAKONDA",
+          "nameHindi": "\u0938\u093f\u0902\u0917\u093e\u0930\u0930\u093f\u092f\u093e\u0915\u094b\u0902\u0921\u093e"
+        },
+        "distanceKilometers": 1115,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "03:24",
+          "departure": "03:25",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 30,
+        "station": {
+          "code": "OGL",
+          "name": "ONGOLE",
+          "nameHindi": "\u0913\u0902\u0917\u094b\u0932"
+        },
+        "distanceKilometers": 1143,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "03:53",
+          "departure": "03:55",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 31,
+        "station": {
+          "code": "CLX",
+          "name": "CHIRALA",
+          "nameHindi": "\u091a\u093f\u0930\u093e\u0932\u093e"
+        },
+        "distanceKilometers": 1192,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "04:39",
+          "departure": "04:40",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 32,
+        "station": {
+          "code": "BPP",
+          "name": "BAPATLA",
+          "nameHindi": "\u092c\u093e\u092a\u0932\u0924\u093e"
+        },
+        "distanceKilometers": 1207,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "04:54",
+          "departure": "04:55",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 33,
+        "station": {
+          "code": "NDO",
+          "name": "NIDUBROLU",
+          "nameHindi": "\u0928\u093f\u0926\u093f\u092c\u0930\u094b\u0932\u0941"
+        },
+        "distanceKilometers": 1228,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "05:13",
+          "departure": "05:15",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 34,
+        "station": {
+          "code": "TEL",
+          "name": "TENALI JN",
+          "nameHindi": "\u0924\u0947\u0928\u093e\u0932\u0940 \u091c\u0902."
+        },
+        "distanceKilometers": 1250,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "05:53",
+          "departure": "05:55",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 35,
+        "station": {
+          "code": "GNT",
+          "name": "GUNTUR JN",
+          "nameHindi": "\u0917\u0941\u0902\u091f\u0942\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 1275,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "06:29",
+          "departure": "06:30",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 36,
+        "station": {
+          "code": "SAP",
+          "name": "SATTENAPALLE",
+          "nameHindi": "\u0938\u0924\u094d\u0924\u0947\u0928\u093e\u092a\u0932\u094d\u0932\u0947"
+        },
+        "distanceKilometers": 1318,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "07:10",
+          "departure": "07:11",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 37,
+        "station": {
+          "code": "PGRL",
+          "name": "PIDUGURALLA",
+          "nameHindi": "\u092a\u093f\u0926\u0941\u0917\u0941\u0930\u0932\u094d\u0932\u093e"
+        },
+        "distanceKilometers": 1349,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "07:40",
+          "departure": "07:41",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 38,
+        "station": {
+          "code": "NDKD",
+          "name": "NADIKODE",
+          "nameHindi": "\u0928\u0921\u093f\u0915\u094b\u0921\u0947"
+        },
+        "distanceKilometers": 1370,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:07",
+          "departure": "08:08",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 39,
+        "station": {
+          "code": "MRGA",
+          "name": "MIRYALAGUDA",
+          "nameHindi": "\u092e\u093f\u0930\u092f\u093e\u0932\u093e\u0917\u0941\u0921\u093e"
+        },
+        "distanceKilometers": 1409,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:32",
+          "departure": "08:33",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 40,
+        "station": {
+          "code": "NLDA",
+          "name": "NALGONDA",
+          "nameHindi": "\u0928\u0932\u0917\u094b\u0902\u0921\u093e"
+        },
+        "distanceKilometers": 1446,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:06",
+          "departure": "09:07",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 41,
+        "station": {
+          "code": "CHZ",
+          "name": "CHARLAPALLI",
+          "nameHindi": "\u091a\u0930\u0932\u093e\u092a\u0932\u094d\u0932\u0940"
+        },
+        "distanceKilometers": 1544,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "11:15",
+          "departure": "11:25",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 42,
+        "station": {
+          "code": "SC",
+          "name": "SECUNDERABAD JN",
+          "nameHindi": "\u0938\u093f\u0915\u0902\u0926\u0930\u093e\u092c\u093e\u0926 \u091c\u0902."
+        },
+        "distanceKilometers": 1556,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:45",
+          "departure": "",
+          "haltMinutes": 0
+        }
+      }
+    ]
+  },
+  "meta": {
+    "timestamp": "2025-09-19T14:03:21.142Z",
+    "traceId": "e12e5606-5970-480c-a8b3-3480f61b84a4",
+    "executionTime": 133,
+    "service": "TrainAPI_V1",
+    "method": "getTrainSchedule"
+  }
+}

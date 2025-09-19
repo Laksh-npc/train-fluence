@@ -1,0 +1,948 @@
+{
+  "success": true,
+  "data": {
+    "train": {
+      "number": "12920",
+      "name": "MALWA EXPRESS",
+      "nameHindi": "\u092e\u093e\u0932\u0935\u093e \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938",
+      "type": "SUF",
+      "typeDescription": "SUPERFAST",
+      "typeDescriptionHindi": "\u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f",
+      "source": {
+        "code": "SVDK",
+        "name": "SHRI MATA VAISHNO DEVI KATRA",
+        "nameHindi": "\u0936\u094d\u0930\u0940 \u092e\u093e\u0924\u093e \u0935\u0948\u0937\u094d\u0923\u094b \u0926\u0947\u0935\u0940 \u0915\u091f\u0921\u093c\u093e"
+      },
+      "destination": {
+        "code": "DADN",
+        "name": "DR. AMBEDKAR NAGAR",
+        "nameHindi": "\u0921\u0949\u0964 \u0905\u092e\u094d\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930"
+      }
+    },
+    "travelTime": "29:50",
+    "runDays": "Daily",
+    "availableClasses": [],
+    "validFrom": "01-Jul-2025",
+    "isReserved": true,
+    "availableStartDates": [
+      "05-Sep-2025",
+      "06-Sep-2025",
+      "07-Sep-2025",
+      "08-Sep-2025",
+      "09-Sep-2025",
+      "10-Sep-2025",
+      "11-Sep-2025",
+      "12-Sep-2025",
+      "13-Sep-2025",
+      "14-Sep-2025",
+      "15-Sep-2025",
+      "16-Sep-2025",
+      "17-Sep-2025",
+      "18-Sep-2025",
+      "19-Sep-2025",
+      "20-Sep-2025",
+      "21-Sep-2025",
+      "22-Sep-2025",
+      "23-Sep-2025",
+      "24-Sep-2025",
+      "25-Sep-2025",
+      "26-Sep-2025",
+      "27-Sep-2025",
+      "28-Sep-2025",
+      "29-Sep-2025",
+      "30-Sep-2025",
+      "01-Oct-2025",
+      "02-Oct-2025",
+      "03-Oct-2025",
+      "04-Oct-2025",
+      "05-Oct-2025",
+      "06-Oct-2025",
+      "07-Oct-2025",
+      "08-Oct-2025",
+      "09-Oct-2025",
+      "10-Oct-2025",
+      "11-Oct-2025",
+      "12-Oct-2025",
+      "13-Oct-2025",
+      "14-Oct-2025",
+      "15-Oct-2025",
+      "16-Oct-2025",
+      "17-Oct-2025",
+      "18-Oct-2025",
+      "19-Oct-2025",
+      "20-Oct-2025",
+      "21-Oct-2025",
+      "22-Oct-2025",
+      "23-Oct-2025",
+      "24-Oct-2025",
+      "25-Oct-2025",
+      "26-Oct-2025",
+      "27-Oct-2025",
+      "28-Oct-2025",
+      "29-Oct-2025",
+      "30-Oct-2025",
+      "31-Oct-2025",
+      "01-Nov-2025",
+      "02-Nov-2025",
+      "03-Nov-2025",
+      "04-Nov-2025",
+      "05-Nov-2025",
+      "06-Nov-2025",
+      "07-Nov-2025",
+      "08-Nov-2025",
+      "09-Nov-2025",
+      "10-Nov-2025",
+      "11-Nov-2025",
+      "12-Nov-2025",
+      "13-Nov-2025",
+      "14-Nov-2025",
+      "15-Nov-2025",
+      "16-Nov-2025",
+      "17-Nov-2025",
+      "18-Nov-2025",
+      "19-Nov-2025"
+    ],
+    "route": [
+      {
+        "stopNumber": 1,
+        "station": {
+          "code": "SVDK",
+          "name": "SHRI MATA VAISHNO DEVI KATRA",
+          "nameHindi": "\u0936\u094d\u0930\u0940 \u092e\u093e\u0924\u093e \u0935\u0948\u0937\u094d\u0923\u094b \u0926\u0947\u0935\u0940 \u0915\u091f\u0921\u093c\u093e"
+        },
+        "distanceKilometers": 0,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "",
+          "departure": "08:35",
+          "haltMinutes": 0
+        }
+      },
+      {
+        "stopNumber": 2,
+        "station": {
+          "code": "CRWL",
+          "name": "CHAKRAKWALA",
+          "nameHindi": "\u091a\u0915 \u0930\u0916\u0935\u093e\u0932"
+        },
+        "distanceKilometers": 16,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:49",
+          "departure": "08:51",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 3,
+        "station": {
+          "code": "MCTM",
+          "name": "MARTYR CAPTAIN TUSHAR MAHAJAN",
+          "nameHindi": "\u0936\u0939\u0940\u0926 \u0915\u0948\u092a\u094d\u091f\u0928 \u0924\u0941\u0937\u093e\u0930 \u092e\u0939\u093e\u091c\u0928"
+        },
+        "distanceKilometers": 25,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:08",
+          "departure": "09:10",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 4,
+        "station": {
+          "code": "RMJK",
+          "name": "RAM NAGAR",
+          "nameHindi": "\u0930\u093e\u092e \u0928\u0917\u0930"
+        },
+        "distanceKilometers": 34,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:24",
+          "departure": "09:26",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 5,
+        "station": {
+          "code": "JAT",
+          "name": "JAMMUTAVI",
+          "nameHindi": "\u091c\u092e\u094d\u092e\u0942 \u0924\u0935\u0940"
+        },
+        "distanceKilometers": 78,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "10:20",
+          "departure": "10:30",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 6,
+        "station": {
+          "code": "KTHU",
+          "name": "KATHUA",
+          "nameHindi": "\u0915\u0920\u0941\u0935\u093e"
+        },
+        "distanceKilometers": 154,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "11:35",
+          "departure": "11:37",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 7,
+        "station": {
+          "code": "PTKC",
+          "name": "PATHANKOT CANTT",
+          "nameHindi": "\u092a\u0920\u093e\u0928\u0915\u094b\u091f \u0915\u0948\u0902\u091f"
+        },
+        "distanceKilometers": 178,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:15",
+          "departure": "12:18",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 8,
+        "station": {
+          "code": "MEX",
+          "name": "MUKERIAN",
+          "nameHindi": "\u092e\u0941\u0915\u0947\u0930\u093f\u092f\u093e\u0902"
+        },
+        "distanceKilometers": 217,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:51",
+          "departure": "12:53",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 9,
+        "station": {
+          "code": "DZA",
+          "name": "DASUYA",
+          "nameHindi": "\u0926\u093e\u0938\u0941\u092f\u093e"
+        },
+        "distanceKilometers": 233,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "13:08",
+          "departure": "13:10",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 10,
+        "station": {
+          "code": "JRC",
+          "name": "JALANDHAR CANT",
+          "nameHindi": "\u091c\u0932\u0902\u0927\u0930 \u0915\u0948\u0902\u091f"
+        },
+        "distanceKilometers": 290,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "14:15",
+          "departure": "14:18",
+          "haltMinutes": 3
+        }
+      },
+      {
+        "stopNumber": 11,
+        "station": {
+          "code": "LDH",
+          "name": "LUDHIANA JN",
+          "nameHindi": "\u0932\u0941\u0927\u093f\u092f\u093e\u0928\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 343,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "15:05",
+          "departure": "15:15",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 12,
+        "station": {
+          "code": "KNN",
+          "name": "KHANNA",
+          "nameHindi": "\u0916\u0928\u094d\u0928\u093e"
+        },
+        "distanceKilometers": 385,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "15:58",
+          "departure": "16:00",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 13,
+        "station": {
+          "code": "SIR",
+          "name": "SIRHIND JN",
+          "nameHindi": "\u0938\u0930\u093f\u0939\u0902\u0926 \u091c\u0902."
+        },
+        "distanceKilometers": 403,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "16:14",
+          "departure": "16:16",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 14,
+        "station": {
+          "code": "UMB",
+          "name": "AMBALA CANT JN",
+          "nameHindi": "\u0905\u0902\u092c\u093e\u0932\u093e \u0915\u0948\u0902\u091f \u091c\u0902."
+        },
+        "distanceKilometers": 456,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "17:00",
+          "departure": "17:05",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 15,
+        "station": {
+          "code": "KKDE",
+          "name": "KURUKSHETRA JN",
+          "nameHindi": "\u0915\u0941\u0930\u0941\u0915\u094d\u0937\u0947\u0924\u094d\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 498,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "17:35",
+          "departure": "17:37",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 16,
+        "station": {
+          "code": "KUN",
+          "name": "KARNAL",
+          "nameHindi": "\u0915\u0930\u0928\u093e\u0932"
+        },
+        "distanceKilometers": 531,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "18:00",
+          "departure": "18:02",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 17,
+        "station": {
+          "code": "PNP",
+          "name": "PANIPAT JN",
+          "nameHindi": "\u092a\u093e\u0928\u0940\u092a\u0924 \u091c\u0902."
+        },
+        "distanceKilometers": 565,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "18:24",
+          "departure": "18:26",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 18,
+        "station": {
+          "code": "SNP",
+          "name": "SONIPAT",
+          "nameHindi": "\u0938\u094b\u0928\u0940\u092a\u0924"
+        },
+        "distanceKilometers": 610,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "18:54",
+          "departure": "18:56",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 19,
+        "station": {
+          "code": "SZM",
+          "name": "SUBZI MANDI",
+          "nameHindi": "\u0938\u092c\u094d\u091c\u0940 \u092e\u0902\u0921\u0940"
+        },
+        "distanceKilometers": 651,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "19:36",
+          "departure": "19:38",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 20,
+        "station": {
+          "code": "NDLS",
+          "name": "NEW DELHI",
+          "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+        },
+        "distanceKilometers": 655,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "20:15",
+          "departure": "20:30",
+          "haltMinutes": 15
+        }
+      },
+      {
+        "stopNumber": 21,
+        "station": {
+          "code": "FDB",
+          "name": "FARIDABAD",
+          "nameHindi": "\u092b\u0930\u0940\u0926\u093e\u092c\u093e\u0926"
+        },
+        "distanceKilometers": 683,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "21:01",
+          "departure": "21:03",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 22,
+        "station": {
+          "code": "BVH",
+          "name": "BALLABGARH",
+          "nameHindi": "\u092c\u0932\u094d\u0932\u092d\u0917\u0922\u093c"
+        },
+        "distanceKilometers": 691,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "21:12",
+          "departure": "21:14",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 23,
+        "station": {
+          "code": "PWL",
+          "name": "PALWAL",
+          "nameHindi": "\u092a\u0932\u0935\u0932"
+        },
+        "distanceKilometers": 712,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "21:40",
+          "departure": "21:42",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 24,
+        "station": {
+          "code": "KSV",
+          "name": "KOSI KALAN",
+          "nameHindi": "\u0915\u094b\u0938\u0940 \u0915\u0932\u093e\u0902"
+        },
+        "distanceKilometers": 754,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "22:08",
+          "departure": "22:10",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 25,
+        "station": {
+          "code": "MTJ",
+          "name": "MATHURA JN.",
+          "nameHindi": "\u092e\u0925\u0941\u0930\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 795,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "22:38",
+          "departure": "22:40",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 26,
+        "station": {
+          "code": "AGC",
+          "name": "AGRA CANTT JN.",
+          "nameHindi": "\u0906\u0917\u0930\u093e \u0915\u0948\u0902\u091f \u091c\u0902."
+        },
+        "distanceKilometers": 848,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "23:15",
+          "departure": "23:20",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 27,
+        "station": {
+          "code": "DHO",
+          "name": "DHAULPUR",
+          "nameHindi": "\u0927\u094c\u0932\u092a\u0941\u0930"
+        },
+        "distanceKilometers": 901,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "00:13",
+          "departure": "00:15",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 28,
+        "station": {
+          "code": "MRA",
+          "name": "MORENA",
+          "nameHindi": "\u092e\u0941\u0930\u0947\u0928\u093e"
+        },
+        "distanceKilometers": 928,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "00:56",
+          "departure": "00:58",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 29,
+        "station": {
+          "code": "GWL",
+          "name": "GWALIOR JN.",
+          "nameHindi": "\u0917\u094d\u0935\u093e\u0932\u093f\u092f\u0930 \u091c\u0902\u0915\u094d\u0936\u0928"
+        },
+        "distanceKilometers": 967,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "01:25",
+          "departure": "01:27",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 30,
+        "station": {
+          "code": "DBA",
+          "name": "DABRA",
+          "nameHindi": "\u0921\u093e\u092c\u0930\u093e"
+        },
+        "distanceKilometers": 1010,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "02:02",
+          "departure": "02:04",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 31,
+        "station": {
+          "code": "DAA",
+          "name": "DATIA",
+          "nameHindi": "\u0926\u0924\u093f\u092f\u093e"
+        },
+        "distanceKilometers": 1041,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "02:28",
+          "departure": "02:30",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 32,
+        "station": {
+          "code": "VGLJ",
+          "name": "VIRANGANA LAKSHMIBAI JHANSI JN",
+          "nameHindi": "\u0935\u093f\u0930\u093e\u0902\u0917\u0928\u093e \u0932\u0915\u094d\u0937\u094d\u092e\u0940\u092c\u093e\u0908 \u091d\u093e\u0901\u0938\u0940 \u0930\u0947\u0932\u0935\u0947 \u0938\u094d\u091f\u0947\u0936\u0928 \u091c\u0902."
+        },
+        "distanceKilometers": 1065,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "03:05",
+          "departure": "03:13",
+          "haltMinutes": 8
+        }
+      },
+      {
+        "stopNumber": 33,
+        "station": {
+          "code": "BAB",
+          "name": "BABINA",
+          "nameHindi": "\u092c\u092c\u0940\u0928\u093e"
+        },
+        "distanceKilometers": 1089,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "03:37",
+          "departure": "03:39",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 34,
+        "station": {
+          "code": "LAR",
+          "name": "LALITPUR",
+          "nameHindi": "\u0932\u0932\u093f\u0924\u092a\u0941\u0930"
+        },
+        "distanceKilometers": 1154,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "04:21",
+          "departure": "04:23",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 35,
+        "station": {
+          "code": "BINA",
+          "name": "BINA JN",
+          "nameHindi": "\u092c\u0940\u0928\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 1217,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "05:30",
+          "departure": "05:35",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 36,
+        "station": {
+          "code": "BAQ",
+          "name": "GANJ BASODA",
+          "nameHindi": "\u0917\u0902\u091c \u092c\u093e\u0938\u094c\u0926\u093e"
+        },
+        "distanceKilometers": 1262,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "06:06",
+          "departure": "06:08",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 37,
+        "station": {
+          "code": "BHS",
+          "name": "VIDISHA",
+          "nameHindi": "\u0935\u093f\u0926\u093f\u0936\u093e"
+        },
+        "distanceKilometers": 1302,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "06:33",
+          "departure": "06:35",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 38,
+        "station": {
+          "code": "BPL",
+          "name": "BHOPAL JN.",
+          "nameHindi": "\u092d\u094b\u092a\u093e\u0932 \u091c\u0902."
+        },
+        "distanceKilometers": 1355,
+        "journeyDay": 2,
+        "isLocoReversal": true,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "07:25",
+          "departure": "07:45",
+          "haltMinutes": 20
+        }
+      },
+      {
+        "stopNumber": 39,
+        "station": {
+          "code": "SHRN",
+          "name": "SANT HIRDARAM NAGAR",
+          "nameHindi": "\u0938\u0902\u0924 \u0939\u093f\u0930\u0926\u093e\u0930\u093e\u092e \u0928\u0917\u0930"
+        },
+        "distanceKilometers": 1368,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:21",
+          "departure": "08:23",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 40,
+        "station": {
+          "code": "SEH",
+          "name": "SEHORE",
+          "nameHindi": "\u0938\u0947\u0939\u094b\u0930\u0947"
+        },
+        "distanceKilometers": 1396,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "08:38",
+          "departure": "08:39",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 41,
+        "station": {
+          "code": "KPP",
+          "name": "KALAPIPAL",
+          "nameHindi": "\u0915\u093e\u0932\u093e\u092a\u0940\u092a\u0932"
+        },
+        "distanceKilometers": 1425,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:05",
+          "departure": "09:06",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 42,
+        "station": {
+          "code": "SJP",
+          "name": "SHUJALPUR",
+          "nameHindi": "\u0936\u0941\u091c\u0932\u092a\u0941\u0930"
+        },
+        "distanceKilometers": 1438,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:18",
+          "departure": "09:20",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 43,
+        "station": {
+          "code": "AKD",
+          "name": "AKODIA",
+          "nameHindi": "\u0905\u0915\u094b\u0926\u093f\u092f\u093e"
+        },
+        "distanceKilometers": 1451,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "09:33",
+          "departure": "09:34",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 44,
+        "station": {
+          "code": "BCH",
+          "name": "BERCHHA",
+          "nameHindi": "\u092c\u0947\u0930\u091b\u093e"
+        },
+        "distanceKilometers": 1481,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "10:00",
+          "departure": "10:02",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 45,
+        "station": {
+          "code": "MKC",
+          "name": "MAKSI JUNCTION",
+          "nameHindi": "\u092e\u0915\u094d\u0938\u0940 \u091c\u0902\u0915\u094d\u0936\u0928"
+        },
+        "distanceKilometers": 1500,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "10:29",
+          "departure": "10:30",
+          "haltMinutes": 1
+        }
+      },
+      {
+        "stopNumber": 46,
+        "station": {
+          "code": "UJN",
+          "name": "UJJAIN JN",
+          "nameHindi": "\u0909\u091c\u094d\u091c\u0948\u0928 \u091c\u0902."
+        },
+        "distanceKilometers": 1541,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "11:20",
+          "departure": "11:35",
+          "haltMinutes": 15
+        }
+      },
+      {
+        "stopNumber": 47,
+        "station": {
+          "code": "DWX",
+          "name": "DEWAS",
+          "nameHindi": "\u0926\u0947\u0935\u093e\u0938"
+        },
+        "distanceKilometers": 1582,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "12:30",
+          "departure": "12:32",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 48,
+        "station": {
+          "code": "INDB",
+          "name": "INDORE JN",
+          "nameHindi": "\u0907\u0902\u0926\u094c\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 1623,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "13:35",
+          "departure": "13:45",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 49,
+        "station": {
+          "code": "DADN",
+          "name": "DR. AMBEDKAR NAGAR",
+          "nameHindi": "\u0921\u0949\u0964 \u0905\u092e\u094d\u092c\u0947\u0921\u0915\u0930 \u0928\u0917\u0930"
+        },
+        "distanceKilometers": 1644,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Daily",
+        "schedule": {
+          "arrival": "14:25",
+          "departure": "",
+          "haltMinutes": 0
+        }
+      }
+    ]
+  },
+  "meta": {
+    "timestamp": "2025-09-19T19:39:40.129Z",
+    "traceId": "8703279c-7445-4e95-ac2f-e66b8663bb75",
+    "executionTime": 51,
+    "service": "TrainAPI_V1",
+    "method": "getTrainSchedule"
+  }
+}

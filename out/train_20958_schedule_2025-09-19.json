@@ -1,0 +1,284 @@
+{
+  "success": true,
+  "data": {
+    "train": {
+      "number": "20958",
+      "name": "INDORE EXPRESS",
+      "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940 \u0908\u0928\u094d\u0926\u094b\u0930 \u0938\u0941\u092a\u0930 \u092b\u093e\u0938\u094d\u091f \u090f\u0915\u094d\u0938\u092a\u094d\u0930\u0947\u0938",
+      "type": "SUF",
+      "typeDescription": "SUPERFAST",
+      "typeDescriptionHindi": "\u0938\u0941\u092a\u0930\u092b\u093e\u0938\u094d\u091f",
+      "source": {
+        "code": "NDLS",
+        "name": "NEW DELHI",
+        "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+      },
+      "destination": {
+        "code": "INDB",
+        "name": "INDORE JN",
+        "nameHindi": "\u0907\u0902\u0926\u094c\u0930 \u091c\u0902."
+      }
+    },
+    "travelTime": "11:30",
+    "runDays": "Mon,thu,sat",
+    "availableClasses": [
+      "1A",
+      "2A",
+      "3A",
+      "3E",
+      "SL",
+      "GEN",
+      "PWD"
+    ],
+    "validFrom": "01-Jan-2025",
+    "isReserved": true,
+    "availableStartDates": [
+      "04-Sep-2025",
+      "06-Sep-2025",
+      "08-Sep-2025",
+      "11-Sep-2025",
+      "13-Sep-2025",
+      "15-Sep-2025",
+      "18-Sep-2025",
+      "20-Sep-2025",
+      "22-Sep-2025",
+      "25-Sep-2025",
+      "27-Sep-2025",
+      "29-Sep-2025",
+      "02-Oct-2025",
+      "04-Oct-2025",
+      "06-Oct-2025",
+      "09-Oct-2025",
+      "11-Oct-2025",
+      "13-Oct-2025",
+      "16-Oct-2025",
+      "18-Oct-2025",
+      "20-Oct-2025",
+      "23-Oct-2025",
+      "25-Oct-2025",
+      "27-Oct-2025",
+      "30-Oct-2025",
+      "01-Nov-2025",
+      "03-Nov-2025",
+      "06-Nov-2025",
+      "08-Nov-2025",
+      "10-Nov-2025",
+      "13-Nov-2025",
+      "15-Nov-2025",
+      "17-Nov-2025"
+    ],
+    "route": [
+      {
+        "stopNumber": 1,
+        "station": {
+          "code": "NDLS",
+          "name": "NEW DELHI",
+          "nameHindi": "\u0928\u0908 \u0926\u093f\u0932\u094d\u0932\u0940"
+        },
+        "distanceKilometers": 0,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Mon,thu,sat",
+        "schedule": {
+          "arrival": "",
+          "departure": "19:15",
+          "haltMinutes": 0
+        }
+      },
+      {
+        "stopNumber": 2,
+        "station": {
+          "code": "MTJ",
+          "name": "MATHURA JN.",
+          "nameHindi": "\u092e\u0925\u0941\u0930\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 141,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Mon,thu,sat",
+        "schedule": {
+          "arrival": "20:58",
+          "departure": "21:00",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 3,
+        "station": {
+          "code": "BTE",
+          "name": "BHARATPUR JN",
+          "nameHindi": "\u092d\u0930\u0924\u092a\u0941\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 174,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Mon,thu,sat",
+        "schedule": {
+          "arrival": "21:23",
+          "departure": "21:25",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 4,
+        "station": {
+          "code": "SWM",
+          "name": "SAWAI MADHOPUR JN",
+          "nameHindi": "\u0938\u0935\u093e\u0908 \u092e\u093e\u0927\u094b\u092a\u0941\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 357,
+        "journeyDay": 1,
+        "isLocoReversal": false,
+        "runDays": "Mon,thu,sat",
+        "schedule": {
+          "arrival": "23:13",
+          "departure": "23:15",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 5,
+        "station": {
+          "code": "KOTA",
+          "name": "KOTA JN",
+          "nameHindi": "\u0915\u094b\u091f\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 465,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "00:30",
+          "departure": "00:40",
+          "haltMinutes": 10
+        }
+      },
+      {
+        "stopNumber": 6,
+        "station": {
+          "code": "RMA",
+          "name": "RAMGANJ MANDI",
+          "nameHindi": "\u0930\u093e\u092e\u0917\u0902\u091c \u092e\u0902\u0921\u0940"
+        },
+        "distanceKilometers": 537,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "01:23",
+          "departure": "01:25",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 7,
+        "station": {
+          "code": "SGZ",
+          "name": "SHAMGARH",
+          "nameHindi": "\u0936\u093e\u092e\u0917\u0922\u093c"
+        },
+        "distanceKilometers": 598,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "02:00",
+          "departure": "02:02",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 8,
+        "station": {
+          "code": "NAD",
+          "name": "NAGDA JN",
+          "nameHindi": "\u0928\u093e\u0917\u0926\u093e \u091c\u0902."
+        },
+        "distanceKilometers": 690,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "03:25",
+          "departure": "03:27",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 9,
+        "station": {
+          "code": "KUH",
+          "name": "KHACHROD",
+          "nameHindi": "\u0916\u091a\u0930\u094b\u0926"
+        },
+        "distanceKilometers": 703,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "03:39",
+          "departure": "03:41",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 10,
+        "station": {
+          "code": "RTM",
+          "name": "RATLAM JN",
+          "nameHindi": "\u0930\u0924\u0932\u093e\u092e \u091c\u0902."
+        },
+        "distanceKilometers": 730,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "04:10",
+          "departure": "04:15",
+          "haltMinutes": 5
+        }
+      },
+      {
+        "stopNumber": 11,
+        "station": {
+          "code": "BNG",
+          "name": "BARNAGAR",
+          "nameHindi": "\u092c\u093e\u0921\u093c\u0928\u0917\u0930"
+        },
+        "distanceKilometers": 777,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "04:53",
+          "departure": "04:55",
+          "haltMinutes": 2
+        }
+      },
+      {
+        "stopNumber": 12,
+        "station": {
+          "code": "INDB",
+          "name": "INDORE JN",
+          "nameHindi": "\u0907\u0902\u0926\u094c\u0930 \u091c\u0902."
+        },
+        "distanceKilometers": 848,
+        "journeyDay": 2,
+        "isLocoReversal": false,
+        "runDays": "Tue,fri,sun",
+        "schedule": {
+          "arrival": "06:45",
+          "departure": "",
+          "haltMinutes": 0
+        }
+      }
+    ]
+  },
+  "meta": {
+    "timestamp": "2025-09-19T13:54:40.310Z",
+    "traceId": "775f7f60-9642-410b-b4ba-929921b8e03a",
+    "executionTime": 59,
+    "service": "TrainAPI_V1",
+    "method": "getTrainSchedule"
+  }
+}

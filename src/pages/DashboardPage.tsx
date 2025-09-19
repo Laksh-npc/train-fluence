@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,65 +13,89 @@ import {
   Lightbulb,
   CheckCircle,
   XCircle,
-  Map
+  Map,
+  RefreshCw,
+  AlertCircle,
+  Zap
 } from "lucide-react";
+import { mockTrains as mockTrainData } from "@/services/mockData";
 
 const DashboardPage = () => {
   const [selectedTrain, setSelectedTrain] = useState<string | null>(null);
   const [filterType, setFilterType] = useState<string>("all");
   const [filterDelay, setFilterDelay] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [trains, setTrains] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [lastRefresh, setLastRefresh] = useState<Date>(new Date());
+  const [aiRecommendations, setAiRecommendations] = useState<any[]>([]);
+  const [algorithmRun, setAlgorithmRun] = useState(false);
 
-  // Mock data for trains
-  const trains = [
-    {
-      id: "12951",
-      name: "Mumbai Rajdhani Express",
-      type: "Rajdhani",
-      status: "on-time",
-      position: [28.6139, 77.2090], // Delhi
-      currentStation: "New Delhi",
-      nextStation: "Gwalior Junction",
-      delay: 0,
-      priority: "High",
-      schedule: [
-        { station: "New Delhi", scheduled: "16:55", actual: "16:55", status: "departed" },
-        { station: "Gwalior Junction", scheduled: "21:38", actual: "21:38", status: "scheduled" },
-        { station: "Bhopal Junction", scheduled: "00:05", actual: "00:05", status: "scheduled" },
-      ]
-    },
-    {
-      id: "12009",
-      name: "Mumbai Shatabdi Express",
-      type: "Shatabdi",
-      status: "minor-delay",
-      position: [25.3176, 82.9739], // Varanasi
-      currentStation: "Allahabad Junction",
-      nextStation: "Kanpur Central",
-      delay: 15,
-      priority: "Medium",
-      schedule: [
-        { station: "New Delhi", scheduled: "06:00", actual: "06:00", status: "departed" },
-        { station: "Allahabad Junction", scheduled: "12:35", actual: "12:50", status: "departed" },
-        { station: "Kanpur Central", scheduled: "14:20", actual: "14:35", status: "scheduled" },
-      ]
-    },
-    {
-      id: "22691",
-      name: "Rajdhani Express",
-      type: "Rajdhani",
-      status: "major-delay",
-      position: [26.9124, 75.7873], // Jaipur
-      currentStation: "Jaipur Junction",
-      nextStation: "Ajmer Junction",
-      delay: 45,
-      priority: "High",
-      schedule: [
-        { station: "Mumbai Central", scheduled: "17:05", actual: "17:05", status: "departed" },
-        { station: "Jaipur Junction", scheduled: "06:45", actual: "07:30", status: "departed" },
-        { station: "Ajmer Junction", scheduled: "09:15", actual: "10:00", status: "scheduled" },
-      ]
+  // Load train data only after algorithm runs (frontend only)
+  const fetchTrains = () => {
+    if (algorithmRun) {
+      setTrains(mockTrainData);
+      setLastRefresh(new Date());
+    } else {
+      setTrains([]);
     }
-  ];
+  };
+
+  // Run algorithm to load all data (frontend only)
+  const runAlgorithm = async () => {
+    setLoading(true);
+    setTimeout(() => {
+      setTrains(mockTrainData);
+      setAiRecommendations([
+        {
+          id: 1,
+          type: "Priority Adjustment",
+          message: "Hold freight train 09472 at Kota for 10 min to let Rajdhani pass",
+          impact: "Reduces total system delay by 25 min",
+          status: "pending"
+        },
+        {
+          id: 2,
+          type: "Route Optimization", 
+          message: "Reroute express train 12009 via alternate track to avoid congestion",
+          impact: "Saves 15 min delay at Allahabad Junction",
+          status: "pending"
+        }
+      ]);
+      setAlgorithmRun(true);
+      setLastRefresh(new Date());
+      setLoading(false);
+    }, 2000);
+  };
+
+  useEffect(() => {
+    fetchTrains();
+  }, [algorithmRun]);
+
+  // Search functionality
+  const searchTrains = (query: string) => {
+    setSearchQuery(query);
+    if (query.trim() === "") {
+      setSelectedTrain(null);
+      return;
+    }
+    
+    const foundTrain = trains.find(train => 
+      train.id.toLowerCase().includes(query.toLowerCase()) ||
+      train.name.toLowerCase().includes(query.toLowerCase())
+    );
+    if (foundTrain) {
+      setSelectedTrain(foundTrain.id);
+    }
+  };
+
+  // Get selected train details
+  const getSelectedTrainDetails = () => {
+    if (!selectedTrain) return null;
+    return trains.find(train => train.id === selectedTrain);
+  };
+
 
   // Mock route data
   const routeLine = [
@@ -101,7 +125,10 @@ const DashboardPage = () => {
     }
   };
 
-  const filteredTrains = trains.filter(train => {
+  // Use real data if available, otherwise fallback to empty array
+  const displayTrains = trains.length > 0 ? trains : [];
+
+  const filteredTrains = displayTrains.filter(train => {
     if (filterType !== "all" && train.type !== filterType) return false;
     if (filterDelay !== "all") {
       if (filterDelay === "on-time" && train.delay > 0) return false;
@@ -117,12 +144,49 @@ const DashboardPage = () => {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-foreground">Live Train Dashboard</h1>
-          <p className="text-muted-foreground flex items-center space-x-2">
+          <div className="text-muted-foreground flex items-center space-x-2">
             <div className="live-indicator">Real-time tracking</div>
             <span>Delhi-Mumbai Corridor</span>
-          </p>
+            {lastRefresh && (
+              <span className="text-xs">
+                Last updated: {lastRefresh.toLocaleTimeString()}
+              </span>
+            )}
+          </div>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={fetchTrains}
+            disabled={loading}
+            className="flex items-center space-x-2"
+          >
+            <RefreshCw className={`h-4 w-4 ${loading ? 'animate-spin' : ''}`} />
+            <span>{loading ? 'Refreshing...' : 'Refresh'}</span>
+          </Button>
+          <Badge variant="outline" className="flex items-center space-x-1">
+            <div className={`w-2 h-2 rounded-full animate-pulse ${
+              error ? 'bg-destructive' : 'bg-success'
+            }`}></div>
+            <span>{error ? 'Error' : 'Live'}</span>
+          </Badge>
         </div>
       </div>
+
+      {/* Error Alert */}
+      {error && (
+        <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-4 flex items-center space-x-2">
+          <AlertCircle className="h-5 w-5 text-destructive" />
+          <div>
+            <p className="text-destructive font-medium">Connection Error</p>
+            <p className="text-destructive/80 text-sm">{error}</p>
+            <p className="text-destructive/60 text-xs mt-1">
+              Showing mock data. Make sure the backend server is running on port 3000.
+            </p>
+          </div>
+        </div>
+      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Filters Sidebar */}
@@ -174,6 +238,8 @@ const DashboardPage = () => {
                   <Input 
                     placeholder="Train number or name..." 
                     className="pl-10"
+                    value={searchQuery}
+                    onChange={(e) => searchTrains(e.target.value)}
                   />
                 </div>
               </div>
@@ -186,7 +252,25 @@ const DashboardPage = () => {
               <CardTitle>Active Trains ({filteredTrains.length})</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 max-h-96 overflow-y-auto">
-              {filteredTrains.map((train) => (
+              {!algorithmRun ? (
+                <div className="text-center py-8">
+                  <div className="space-y-4">
+                    <div className="mx-auto w-16 h-16 bg-muted rounded-full flex items-center justify-center">
+                      <Train className="h-8 w-8 text-muted-foreground" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-muted-foreground">No Train Data</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Run AI optimization to load live train data
+                      </p>
+                    </div>
+                    <Button onClick={runAlgorithm} disabled={loading} className="mt-4">
+                      <Zap className="h-4 w-4 mr-2" />
+                      {loading ? 'Running Algorithm...' : 'Run AI Optimization'}
+                    </Button>
+                  </div>
+                </div>
+              ) : filteredTrains.map((train) => (
                 <div
                   key={train.id}
                   className={`train-card cursor-pointer transition-all ${
