@@ -165,8 +165,11 @@ const OptimizationAnalytics = () => {
         </div>
       )}
 
-      {/* KPI Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Analytics Content - Only show when optimization has been run */}
+      {algorithmRun && analyticsData && currentOptimization && (
+        <>
+          {/* KPI Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -547,7 +550,7 @@ const OptimizationAnalytics = () => {
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
-            {[currentOptimization].map((entry, index) => (
+            {currentOptimization ? [currentOptimization].map((entry, index) => (
               <div key={entry.run_id} className="flex items-center justify-between p-4 border rounded-lg">
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center space-x-2">
@@ -585,28 +588,19 @@ const OptimizationAnalytics = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            )) : (
+              <div className="text-center py-8 text-muted-foreground">
+                <BarChart3 className="h-12 w-12 mx-auto mb-4 opacity-50" />
+                <p>No optimization history available</p>
+                <p className="text-sm">Run an optimization to see results here</p>
+              </div>
+            )}
           </div>
         </CardContent>
       </Card>
 
-      {/* Before vs After Chart Placeholder */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Delay Reduction Over Time</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="h-64 flex items-center justify-center bg-muted/20 rounded-lg">
-            <div className="text-center">
-              <BarChart3 className="h-12 w-12 text-muted-foreground mx-auto mb-2" />
-              <p className="text-muted-foreground">Chart visualization would go here</p>
-              <p className="text-sm text-muted-foreground">
-                Shows before/after delay comparison over time
-              </p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+        </>
+      )}
     </div>
   );
 };

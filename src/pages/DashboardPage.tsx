@@ -75,18 +75,23 @@ const DashboardPage = () => {
 
   // Search functionality
   const searchTrains = (query: string) => {
-    setSearchQuery(query);
     if (query.trim() === "") {
       setSelectedTrain(null);
       return;
     }
     
-    const foundTrain = trains.find(train => 
+    // Use mock data for search since we removed the algorithm run requirement
+    const allTrains = mockTrainData;
+    const foundTrain = allTrains.find(train => 
       train.id.toLowerCase().includes(query.toLowerCase()) ||
       train.name.toLowerCase().includes(query.toLowerCase())
     );
     if (foundTrain) {
       setSelectedTrain(foundTrain.id);
+      setTrains([foundTrain]); // Set the found train in state
+    } else {
+      setSelectedTrain(null);
+      setTrains([]);
     }
   };
 
@@ -239,162 +244,124 @@ const DashboardPage = () => {
                     placeholder="Train number or name..." 
                     className="pl-10"
                     value={searchQuery}
-                    onChange={(e) => searchTrains(e.target.value)}
+                    onChange={(e) => setSearchQuery(e.target.value)}
                   />
                 </div>
+                <Button 
+                  onClick={() => searchTrains(searchQuery)}
+                  className="w-full"
+                  disabled={!searchQuery.trim()}
+                >
+                  <Search className="h-4 w-4 mr-2" />
+                  Search Train
+                </Button>
               </div>
             </CardContent>
           </Card>
 
-          {/* Train List */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Active Trains ({filteredTrains.length})</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3 max-h-96 overflow-y-auto">
-              {!algorithmRun ? (
-                <div className="text-center py-8">
-                  <div className="space-y-4">
-                    <div className="mx-auto w-16 h-16 bg-muted rounded-full flex items-center justify-center">
-                      <Train className="h-8 w-8 text-muted-foreground" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-muted-foreground">No Train Data</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Run AI optimization to load live train data
-                      </p>
-                    </div>
-                    <Button onClick={runAlgorithm} disabled={loading} className="mt-4">
-                      <Zap className="h-4 w-4 mr-2" />
-                      {loading ? 'Running Algorithm...' : 'Run AI Optimization'}
-                    </Button>
-                  </div>
-                </div>
-              ) : filteredTrains.map((train) => (
-                <div
-                  key={train.id}
-                  className={`train-card cursor-pointer transition-all ${
-                    selectedTrain === train.id ? "ring-2 ring-primary shadow-status" : ""
-                  }`}
-                  onClick={() => setSelectedTrain(train.id)}
-                >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center space-x-2">
-                      <Train className="h-4 w-4 text-primary" />
-                      <span className="font-medium text-sm">{train.id}</span>
-                    </div>
-                    <Badge className={getStatusColor(train.status)}>
-                      {getStatusText(train.status)}
-                    </Badge>
-                  </div>
-                  <p className="text-sm font-medium text-foreground mb-1">{train.name}</p>
-                  <div className="flex items-center space-x-4 text-xs text-muted-foreground">
-                    <span className="flex items-center space-x-1">
-                      <MapPin className="h-3 w-3" />
-                      <span>{train.currentStation}</span>
-                    </span>
-                    {train.delay > 0 && (
-                      <span className="flex items-center space-x-1">
-                        <Clock className="h-3 w-3" />
-                        <span>+{train.delay}m</span>
-                      </span>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
         </div>
 
         {/* Map Section */}
         <div className="lg:col-span-2">
           <Card className="h-[600px]">
-            <CardHeader>
-              <CardTitle>Route Map</CardTitle>
-            </CardHeader>
-            <CardContent className="h-full p-0">
-              <div className="h-full rounded-lg overflow-hidden bg-muted/30 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="mx-auto w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Map className="h-8 w-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-foreground">Interactive Railway Map</h3>
-                    <p className="text-sm text-muted-foreground">
-                      Delhi-Mumbai Corridor Live Tracking
-                    </p>
-                    <div className="mt-4 space-y-2">
-                      {filteredTrains.map((train) => (
-                        <div key={train.id} className="flex items-center justify-between text-xs bg-background/80 rounded px-3 py-2">
-                          <span className="flex items-center space-x-2">
-                            <Train className="h-3 w-3" />
-                            <span>{train.id}</span>
-                          </span>
-                          <Badge className={getStatusColor(train.status)}>
-                            {train.currentStation}
-                          </Badge>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Train Details & AI Recommendations */}
-        <div className="space-y-4">
-          {selectedTrain ? (
-            <>
-              {/* Selected Train Details */}
-              <Card>
-                <CardHeader>
-                  <CardTitle>Train Details</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
+            <CardContent className="h-full p-6">
+              {selectedTrain ? (
+                <div className="h-full">
                   {(() => {
                     const train = trains.find(t => t.id === selectedTrain);
                     if (!train) return null;
                     
                     return (
-                      <div className="space-y-3">
-                        <div>
-                          <h3 className="font-semibold text-lg">{train.name}</h3>
-                          <p className="text-sm text-muted-foreground">Train #{train.id} • {train.type}</p>
+                      <div className="space-y-6">
+                        {/* Train Header */}
+                        <div className="text-center border-b pb-4">
+                          <div className="flex items-center justify-center space-x-2 mb-2">
+                            <Train className="h-6 w-6 text-primary" />
+                            <h2 className="text-2xl font-bold">{train.name}</h2>
+                          </div>
+                          <p className="text-muted-foreground">Train #{train.id} • {train.type}</p>
+                          <Badge className={`mt-2 ${getStatusColor(train.status)}`}>
+                            {getStatusText(train.status)}
+                          </Badge>
                         </div>
-                        
-                        <div className="space-y-2">
-                          <div className="flex justify-between">
-                            <span className="text-sm">Priority:</span>
-                            <Badge variant="secondary">{train.priority}</Badge>
+
+                        {/* Train Details Grid */}
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="space-y-3">
+                            <div className="flex items-center space-x-2">
+                              <MapPin className="h-4 w-4 text-primary" />
+                              <div>
+                                <p className="text-sm text-muted-foreground">Current Station</p>
+                                <p className="font-semibold">{train.currentStation}</p>
+                              </div>
+                            </div>
+                            
+                            <div className="flex items-center space-x-2">
+                              <MapPin className="h-4 w-4 text-blue-500" />
+                              <div>
+                                <p className="text-sm text-muted-foreground">Next Station</p>
+                                <p className="font-semibold">{train.nextStation}</p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center space-x-2">
+                              <Clock className="h-4 w-4 text-orange-500" />
+                              <div>
+                                <p className="text-sm text-muted-foreground">Delay Status</p>
+                                <p className={`font-semibold ${train.delay > 0 ? 'text-destructive' : 'text-success'}`}>
+                                  {train.delay > 0 ? `+${train.delay} minutes` : 'On Time'}
+                                </p>
+                              </div>
+                            </div>
                           </div>
-                          <div className="flex justify-between">
-                            <span className="text-sm">Current Station:</span>
-                            <span className="text-sm font-medium">{train.currentStation}</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-sm">Next Station:</span>
-                            <span className="text-sm font-medium">{train.nextStation}</span>
-                          </div>
-                          <div className="flex justify-between">
-                            <span className="text-sm">Delay:</span>
-                            <span className={`text-sm font-medium ${train.delay > 0 ? 'text-destructive' : 'text-success'}`}>
-                              {train.delay > 0 ? `+${train.delay} min` : 'On time'}
-                            </span>
+
+                          <div className="space-y-3">
+                            <div className="flex items-center space-x-2">
+                              <AlertCircle className="h-4 w-4 text-yellow-500" />
+                              <div>
+                                <p className="text-sm text-muted-foreground">Priority</p>
+                                <p className="font-semibold">{train.priority}</p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center space-x-2">
+                              <RefreshCw className="h-4 w-4 text-green-500" />
+                              <div>
+                                <p className="text-sm text-muted-foreground">Status</p>
+                                <p className="font-semibold capitalize">{train.status.replace('-', ' ')}</p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center space-x-2">
+                              <Map className="h-4 w-4 text-purple-500" />
+                              <div>
+                                <p className="text-sm text-muted-foreground">Route</p>
+                                <p className="font-semibold">Delhi-Mumbai Corridor</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
-                        <div className="space-y-2">
-                          <h4 className="text-sm font-medium">Schedule</h4>
-                          <div className="space-y-1">
+                        {/* Schedule Section */}
+                        <div className="border-t pt-4">
+                          <h3 className="font-semibold mb-3 flex items-center space-x-2">
+                            <Clock className="h-4 w-4" />
+                            <span>Schedule</span>
+                          </h3>
+                          <div className="space-y-2 max-h-40 overflow-y-auto">
                             {train.schedule.map((stop, index) => (
-                              <div key={index} className="flex justify-between text-xs">
-                                <span>{stop.station}</span>
-                                <div className="flex space-x-2">
-                                  <span className="text-muted-foreground">{stop.scheduled}</span>
+                              <div key={index} className="flex items-center justify-between p-2 bg-muted/50 rounded">
+                                <div className="flex items-center space-x-2">
+                                  <div className={`w-2 h-2 rounded-full ${
+                                    stop.status === 'departed' ? 'bg-success' : 
+                                    stop.status === 'scheduled' ? 'bg-primary' : 'bg-muted'
+                                  }`}></div>
+                                  <span className="text-sm font-medium">{stop.station}</span>
+                                </div>
+                                <div className="flex space-x-3 text-xs">
+                                  <span className="text-muted-foreground">Scheduled: {stop.scheduled}</span>
                                   <span className={stop.actual !== stop.scheduled ? 'text-destructive' : 'text-success'}>
-                                    {stop.actual}
+                                    Actual: {stop.actual}
                                   </span>
                                 </div>
                               </div>
@@ -404,19 +371,31 @@ const DashboardPage = () => {
                       </div>
                     );
                   })()}
-                </CardContent>
-              </Card>
-            </>
-          ) : (
-            <Card>
-              <CardContent className="py-8 text-center">
-                <Train className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                <p className="text-muted-foreground">Select a train to view details</p>
-              </CardContent>
-            </Card>
-          )}
+                </div>
+              ) : (
+                <div className="h-full flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="mx-auto w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+                      <Map className="h-8 w-8 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-foreground">Interactive Railway Map</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Delhi-Mumbai Corridor Live Tracking
+                      </p>
+                      <p className="text-xs text-muted-foreground mt-2">
+                        Search for a train to view detailed information
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </div>
 
-          {/* AI Recommendations */}
+        {/* AI Recommendations */}
+        <div className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center space-x-2">
